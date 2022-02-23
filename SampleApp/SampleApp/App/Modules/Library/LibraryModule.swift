@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import APIClient
+import Shared
 
 // MARK: - Library Module
 public class LibraryModule {
     
     public func build() -> LibraryView {
+        let provider = AlamofireProvider()
+        let apiClient = HTTPClient(provider: provider)
+        let service = BookService(apiClient: apiClient)
         let view = LibraryViewController.instantiate()
-        let interactor = LibraryInteractor()
+        let interactor = LibraryInteractor(service: service)
         let router = LibraryRouter()
         let presenter = LibraryPresenter(view: view, interactor: interactor, router: router)
         

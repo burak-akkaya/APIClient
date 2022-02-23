@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Combine
+import APIClient
 
 // MARK: - LibraryInteractorProtocol
 public protocol LibraryInteractorProtocol: Interactor {
     var presenter: LibraryPresenterProtocol? {get set}
+
+    func getAll() -> AnyPublisher<BookResponse, HTTPError>
 }
 
 // MARK: - LibraryInteractorProtocol
@@ -18,6 +22,8 @@ public protocol LibraryPresenterProtocol: Presenter {
     var view: LibraryView? {get set}
     var interactor: LibraryInteractorProtocol {get set}
     var router: LibraryRouterProtocol {get set}
+
+    func load()
 }
 
 // MARK: - LibraryRouterProtocol
@@ -29,4 +35,6 @@ public protocol LibraryRouterProtocol: Router {
 // MARK: - LibraryViewProtocol
 public protocol LibraryView: View {
     var presenter: LibraryPresenterProtocol! {get set}
+
+    func update(books: [UIBook])
 }

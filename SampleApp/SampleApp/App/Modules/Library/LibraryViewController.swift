@@ -18,6 +18,11 @@ public class LibraryViewController: UIViewController, LibraryView, Storyboarded 
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        presenter.load()
+    }
+
+    public func update(books: [UIBook]) {
+        print(books.count)
     }
     
 }

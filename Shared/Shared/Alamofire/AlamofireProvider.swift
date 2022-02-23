@@ -13,6 +13,8 @@ import UIKit
 
 public class AlamofireProvider: NetworkProvider {
 
+    public init() {}
+
     public func send<T: Decodable>(request: APIClient.HTTPRequest) -> AnyPublisher<T, HTTPError> {
         guard let request = AlamofireRequestBuilder()
                 .set(url: request.url)
