@@ -19,6 +19,7 @@
 		63A6E4DF27A4052200992B2C /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6E4DE27A4052200992B2C /* AutoMockable.swift */; };
 		63A6E4E727A5C2C900992B2C /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6E4E627A5C2C900992B2C /* EncodableExtensions.swift */; };
 		63A6E53D27A81A5700992B2C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A6E53C27A81A5700992B2C /* XCTest.framework */; };
+		63C09C8D27C6CC4300541C2E /* UIStoryboard+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09C8C27C6CC4300541C2E /* UIStoryboard+Init.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		63A6E4DE27A4052200992B2C /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
 		63A6E4E627A5C2C900992B2C /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		63A6E53C27A81A5700992B2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		63C09C8C27C6CC4300541C2E /* UIStoryboard+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Init.swift"; sourceTree = "<group>"; };
 		B67EC8820905A03E95A01AB9 /* Pods-App-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-Core.debug.xcconfig"; path = "Target Support Files/Pods-App-Core/Pods-App-Core.debug.xcconfig"; sourceTree = "<group>"; };
 		C688949DEB58BEB4A949E17B /* Pods-App-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-Core.release.xcconfig"; path = "Target Support Files/Pods-App-Core/Pods-App-Core.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 			children = (
 				637DA428279B6904007BBB72 /* NSObjectExtensions.swift */,
 				63A6E4E627A5C2C900992B2C /* EncodableExtensions.swift */,
+				63C09C8C27C6CC4300541C2E /* UIStoryboard+Init.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			files = (
 				63A6E4DF27A4052200992B2C /* AutoMockable.swift in Sources */,
 				637DA3C7279B64A9007BBB72 /* Core.docc in Sources */,
+				63C09C8D27C6CC4300541C2E /* UIStoryboard+Init.swift in Sources */,
 				637DA429279B6904007BBB72 /* NSObjectExtensions.swift in Sources */,
 				634CDFAB27A1259F00225F06 /* CoreSample.swift in Sources */,
 				63A6E4E727A5C2C900992B2C /* EncodableExtensions.swift in Sources */,

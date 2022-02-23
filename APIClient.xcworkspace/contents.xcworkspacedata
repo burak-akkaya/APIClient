@@ -2,10 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:APIClient/APIClient.xcodeproj">
+      location = "group:SampleApp/SampleApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Core/Core.xcodeproj">
+      location = "group:SampleApp/../APIClient/APIClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SampleApp/../Shared/Shared.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:APIClient/../Core/Core.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

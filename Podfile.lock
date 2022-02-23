@@ -1,24 +1,28 @@
 PODS:
+  - Alamofire (5.5.0)
   - Sourcery (1.6.0)
   - SwiftLint (0.46.2)
   - SwiftyMocky (4.1.0):
     - Sourcery (= 1.6.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.5)
   - SwiftLint
   - SwiftyMocky
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Sourcery
     - SwiftLint
     - SwiftyMocky
 
 SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Sourcery: 744f43178637c79bf23127dfe34e2103b3f28499
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
   SwiftyMocky: 014739247afadb65efb5bb92ede32c22b9365762
 
-PODFILE CHECKSUM: e57eabb1da730c2a82567718a23ff3be6b3078cf
+PODFILE CHECKSUM: 7cd2fb7fdfcea20a826eac5552c060e0bb4e7f81
 
 COCOAPODS: 1.10.0

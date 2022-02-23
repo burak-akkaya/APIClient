@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "632B4898279ADDB40003E6B4"
+               BuildableName = "Shared.framework"
+               BlueprintName = "Shared"
+               ReferencedContainer = "container:Shared.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -16,23 +32,13 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "634CDFB527A13ED200225F06"
-            BuildableName = "APIClient.framework"
-            BlueprintName = "APIClient"
-            ReferencedContainer = "container:APIClient.xcodeproj">
+            BlueprintIdentifier = "632B4898279ADDB40003E6B4"
+            BuildableName = "Shared.framework"
+            BlueprintName = "Shared"
+            ReferencedContainer = "container:Shared.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "634CDFBF27A13ED300225F06"
-               BuildableName = "APIClientTests.xctest"
-               BlueprintName = "APIClientTests"
-               ReferencedContainer = "container:APIClient.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -52,6 +58,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "632B4898279ADDB40003E6B4"
+            BuildableName = "Shared.framework"
+            BlueprintName = "Shared"
+            ReferencedContainer = "container:Shared.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
