@@ -16,7 +16,8 @@ public class LibraryModule {
     public func build() -> LibraryView {
         let provider = AlamofireProvider()
         let apiClient = HTTPClient(provider: provider)
-        let service = BookService(apiClient: apiClient)
+        let repository = BookRepository(apiClient: apiClient)
+        let service = BookService(repository: repository)
         let view = LibraryViewController.instantiate()
         let interactor = LibraryInteractor(service: service)
         let router = LibraryRouter()

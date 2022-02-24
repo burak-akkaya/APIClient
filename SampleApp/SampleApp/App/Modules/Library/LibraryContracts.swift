@@ -14,7 +14,7 @@ import APIClient
 public protocol LibraryInteractorProtocol: Interactor {
     var presenter: LibraryPresenterProtocol? {get set}
 
-    func getAll() -> AnyPublisher<BookResponse, HTTPError>
+    func getAll(converter: @escaping (BookResponse) -> [UIBook]) -> AnyPublisher<[UIBook], HTTPError>
 }
 
 // MARK: - LibraryInteractorProtocol

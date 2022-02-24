@@ -18,8 +18,8 @@ public class LibraryInteractor: LibraryInteractorProtocol {
         self.service = service
     }
 
-    public func getAll() -> AnyPublisher<BookResponse, HTTPError> {
-        return service.all()
+    public func getAll(converter: @escaping (BookResponse) -> [UIBook]) -> AnyPublisher<[UIBook], HTTPError> {
+        return service.all(converter: converter)
     }
 
 }

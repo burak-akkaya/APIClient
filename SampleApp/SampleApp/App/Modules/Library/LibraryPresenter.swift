@@ -24,7 +24,7 @@ public class LibraryPresenter: LibraryPresenterProtocol {
     }
 
     public func load() {
-        self.interactor.getAll().first().compactMap(convert).sink{ completion in
+        self.interactor.getAll(converter: BookConverter.convert(bookResponse:)).sink{ completion in
             switch completion {
             case .failure(let error):
                 print(error.message)
@@ -35,13 +35,5 @@ public class LibraryPresenter: LibraryPresenterProtocol {
         }.store(in: &subscription)
 
 
-    }
-
-    private func convert(bookResponse: BookResponse) -> [UIBook] {
-        let result = bookResponse.bookList.compactMap { book -> UIBook in
-            UIBook(name: book.name, author: book.authorName)
-        }
-
-        return result
     }
 }

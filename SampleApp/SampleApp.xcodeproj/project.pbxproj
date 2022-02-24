@@ -39,6 +39,7 @@
 		63C09CA227C6CF7400541C2E /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CA127C6CF7400541C2E /* BookResponse.swift */; };
 		63C09CA427C6D00300541C2E /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CA327C6D00300541C2E /* BookService.swift */; };
 		63C09CAA27C6D2D800541C2E /* UIBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CA927C6D2D800541C2E /* UIBook.swift */; };
+		63C09CAD27C77E1500541C2E /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CAC27C77E1500541C2E /* BookRepository.swift */; };
 		9320A6BA9749C4907BBE82DB /* Pods_SampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1A19BF251296F24389EBF /* Pods_SampleAppUITests.framework */; };
 		C2F19DE2BBD4FA6EED1C3AD3 /* Pods_SampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F70F1BF952A49776E42091 /* Pods_SampleAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -174,6 +175,7 @@
 		63C09CA127C6CF7400541C2E /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
 		63C09CA327C6D00300541C2E /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		63C09CA927C6D2D800541C2E /* UIBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBook.swift; sourceTree = "<group>"; };
+		63C09CAC27C77E1500541C2E /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		B7486871912F12774CA64347 /* Pods-SampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppUITests/Pods-SampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8306E62F86B990F13AFF9D2 /* Pods-SampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B9AF8FC299598521F6A9E9CC /* Pods_App_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +246,7 @@
 			children = (
 				63C09C7927C6CB1F00541C2E /* App */,
 				63C09C7B27C6CB3E00541C2E /* Services */,
+				63C09CAB27C77DF700541C2E /* Repository */,
 				63C09C7A27C6CB3000541C2E /* Domain */,
 				63C09C7827C6CB1200541C2E /* Resources */,
 				63C09C7727C6CB0D00541C2E /* Support */,
@@ -425,6 +428,14 @@
 				63C09CA927C6D2D800541C2E /* UIBook.swift */,
 			);
 			path = UIEntity;
+			sourceTree = "<group>";
+		};
+		63C09CAB27C77DF700541C2E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				63C09CAC27C77E1500541C2E /* BookRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		90BDE94C99A8E96842EBC818 /* Pods */ = {
@@ -745,6 +756,7 @@
 			files = (
 				63C09C8827C6CB7300541C2E /* LibraryInteractor.swift in Sources */,
 				63C09BE427C6BE7700541C2E /* ViewController.swift in Sources */,
+				63C09CAD27C77E1500541C2E /* BookRepository.swift in Sources */,
 				63C09C9B27C6CDBE00541C2E /* Interactor.swift in Sources */,
 				63C09C8627C6CB7300541C2E /* LibraryContracts.swift in Sources */,
 				63C09CA427C6D00300541C2E /* BookService.swift in Sources */,

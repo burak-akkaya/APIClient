@@ -9,20 +9,28 @@ import Combine
 import APIClient
 
 public protocol BookServiceProtocol {
-    func all() -> AnyPublisher<BookResponse, HTTPError>
+    func all<T>(converter: @escaping (BookResponse) -> [T]) -> AnyPublisher<[T], HTTPError>
 }
 
 public class BookService: BookServiceProtocol{
-    private var apiClient: HTTPClientProtocol
+    private var repository: BookRepositoryProtocol
+    private var subscription =  Set<AnyCancellable>()
 
-    init(apiClient: HTTPClientProtocol) {
-        self.apiClient = apiClient
+    init(repository: BookRepositoryProtocol) {
+        self.repository = repository
     }
 
-    public func all() -> AnyPublisher<BookResponse, HTTPError> {
-        let request = HTTPRequest.Builder(url: "http://localhost:8080/api/sample/book/all")
-            .set(method: .get)
-            .build()
-        return apiClient.send(request: request)
+    public func all<T>(converter: @escaping (BookResponse) -> [T]) -> AnyPublisher<[T], HTTPError> {
+        return self.repository.all().first().compactMap(converter).eraseToAnyPublisher()
+    }
+}
+
+public class BookConverter {
+    public class func convert(bookResponse: BookResponse) -> [UIBook] {
+        let result = bookResponse.bookList.compactMap { book -> UIBook in
+            UIBook(name: book.name, author: book.authorName)
+        }
+
+        return result
     }
 }
