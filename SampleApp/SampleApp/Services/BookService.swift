@@ -24,13 +24,3 @@ public class BookService: BookServiceProtocol{
         return self.repository.all().first().compactMap(converter).eraseToAnyPublisher()
     }
 }
-
-public class BookConverter {
-    public class func convert(bookResponse: BookResponse) -> [UIBook] {
-        let result = bookResponse.bookList.compactMap { book -> UIBook in
-            UIBook(name: book.name, author: book.authorName)
-        }
-
-        return result
-    }
-}

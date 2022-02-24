@@ -40,6 +40,7 @@
 		63C09CA427C6D00300541C2E /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CA327C6D00300541C2E /* BookService.swift */; };
 		63C09CAA27C6D2D800541C2E /* UIBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CA927C6D2D800541C2E /* UIBook.swift */; };
 		63C09CAD27C77E1500541C2E /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CAC27C77E1500541C2E /* BookRepository.swift */; };
+		63C09CB027C78D5D00541C2E /* BookConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C09CAF27C78D5D00541C2E /* BookConverter.swift */; };
 		9320A6BA9749C4907BBE82DB /* Pods_SampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1A19BF251296F24389EBF /* Pods_SampleAppUITests.framework */; };
 		C2F19DE2BBD4FA6EED1C3AD3 /* Pods_SampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F70F1BF952A49776E42091 /* Pods_SampleAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -176,6 +177,7 @@
 		63C09CA327C6D00300541C2E /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		63C09CA927C6D2D800541C2E /* UIBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBook.swift; sourceTree = "<group>"; };
 		63C09CAC27C77E1500541C2E /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		63C09CAF27C78D5D00541C2E /* BookConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookConverter.swift; sourceTree = "<group>"; };
 		B7486871912F12774CA64347 /* Pods-SampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppUITests/Pods-SampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8306E62F86B990F13AFF9D2 /* Pods-SampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B9AF8FC299598521F6A9E9CC /* Pods_App_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,6 +427,7 @@
 		63C09CA827C6D2C600541C2E /* UIEntity */ = {
 			isa = PBXGroup;
 			children = (
+				63C09CAE27C78D4900541C2E /* Converters */,
 				63C09CA927C6D2D800541C2E /* UIBook.swift */,
 			);
 			path = UIEntity;
@@ -436,6 +439,14 @@
 				63C09CAC27C77E1500541C2E /* BookRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		63C09CAE27C78D4900541C2E /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				63C09CAF27C78D5D00541C2E /* BookConverter.swift */,
+			);
+			path = Converters;
 			sourceTree = "<group>";
 		};
 		90BDE94C99A8E96842EBC818 /* Pods */ = {
@@ -767,6 +778,7 @@
 				63C09BE027C6BE7700541C2E /* AppDelegate.swift in Sources */,
 				63C09C8427C6CB7300541C2E /* LibraryPresenter.swift in Sources */,
 				63C09C9F27C6CDBE00541C2E /* Presenter.swift in Sources */,
+				63C09CB027C78D5D00541C2E /* BookConverter.swift in Sources */,
 				63C09CAA27C6D2D800541C2E /* UIBook.swift in Sources */,
 				63C09C9427C6CCEB00541C2E /* Storyboarded.swift in Sources */,
 				63C09C9D27C6CDBE00541C2E /* Presentable.swift in Sources */,
